@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 90%;
+    background-color: rgb(236, 223, 223);
+    color: black;
+}
+.card{
+    width: 100%;
+    max-width: 350px;
+    min-height: 50vh;
+    background-color: gray;
+    border-radius: 20px 20px;
+    margin: 100px 600px;
+}
+.header{
+    padding: 20px 10px;
+    display: flex;
+}
+.header h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.header img{
+    height: 22px;
+    padding-left: 10px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+   margin-right: 30px;
+  
+}
+input{
+     border: none;
+   outline: none;
+   background-color: #edeef0;
+   flex: 1;
+   
+   font-weight: 14px;
+}
+button{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    /* background: #ff5945; */
+     background: rgb(195, 190, 190);
+    color: black;
+    font-size: 15px;
+    border-radius: 40px;
+    padding: 16px 50px;
+    
+}
+button:hover{
+    background-color: #555151;
+    color: #edeef0;
+}
+#list-container{
+    margin-left: 30px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 6px 12px 50px;
+    user-select: none;
+    position: relative;
+}
+ ul li::before{
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    
+}
+.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+.checked::before{
+    background-image: url(images/checked.png);
+}
+span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: #555;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+span:hover{
+    background: #edeef0;
+}
